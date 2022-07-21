@@ -2,7 +2,7 @@
 
 INDEX=1
 while [ $INDEX -lt 6 ]; do
-    mkdir /root/LERN/771/name-$((INDEX))
+    mkdir /root/name-$((INDEX))
     ((INDEX++))
 done
 
