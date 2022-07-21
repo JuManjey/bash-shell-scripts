@@ -1,0 +1,12 @@
+#!/bin/bash
+
+INDEX=1
+while [ $INDEX -lt 6 ]; do
+    mkdir /root/LERN/771/name-$((INDEX))
+    ((INDEX++))
+done
+
+while [ "$CORRECT" != "y" ]; do
+    read -p "Enter the value: " NAME
+    read -p "Is the value ${NAME} = y ?" CORRECT
+done
