@@ -1,5 +1,5 @@
 #!/bin/bash
-
+######################################
 read -p "Enter y or n: " ANSWER
 case "$ANSWER" in
 [Yy])
@@ -12,3 +12,17 @@ case "$ANSWER" in
     echo "Invalid answer."
     ;;
 esac
+#####################################
+case "$CHOICE" in
+    1)
+        df -h
+        ;;
+    2)
+        uptime
+        ;;
+    *)
+        break
+        ;;
+    esac
+done
+#####################################
