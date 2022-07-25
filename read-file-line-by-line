@@ -1,10 +1,15 @@
 #!/bin/bash
 
-echo "Start of learning"
-
+####################################
 LINE_NUMBER=1
 while read LINE
 do
     echo "${LINE_NUMBER}: ${LINE}"
     ((LINE_NUMBER++))
 done < example.txt
+####################################
+SOMETHING="md"
+grep $SOMETHING /etc/fstab | while read LINE
+do
+    echo "$SOMETHING: ${LINE}"
+done
